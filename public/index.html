@@ -1,14 +1,94 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>ClientLab3</title>
-  <base href="/">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css" media="screen" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/bootstrap.js"></script>
+    <script type="text/javascript" src="javascripts/optimize.js"></script>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Матрицы</title>
 </head>
 <body>
-  <app-root></app-root>
-<script src="runtime-es2015.js" type="module"></script><script src="polyfills-es2015.js" type="module"></script><script src="runtime-es5.js" nomodule></script><script src="polyfills-es5.js" nomodule></script><script src="styles-es2015.js" type="module"></script><script src="styles-es5.js" nomodule></script><script src="vendor-es2015.js" type="module"></script><script src="main-es2015.js" type="module"></script><script src="vendor-es5.js" nomodule></script><script src="main-es5.js" nomodule></script></body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="darova">
+    <a class="navbar-brand  active" href="/"><img src="images/logo.png" class="logo" alt=""></a>
+    <button onclick="countRabbits()" onclick="countRabbits()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Виды матриц
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/sections/1">TN матрица</a>
+                    <a class="dropdown-item" href="/sections/2">TN+Film матрица.</a>
+                    <a class="dropdown-item" href="/sections/3">TFT матрица</a>
+                    <a class="dropdown-item" href="/sections/4">SFT матрица</a>
+                    <a class="dropdown-item" href="/sections/5">IPS матрица</a>
+
+                    <a class="dropdown-item" href="/sections/8">PLS матрица</a>
+                    <a class="dropdown-item" href="/sections/9">VA матрица</a>
+                    <a class="dropdown-item" href="/sections/10">OLED матрица</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/sections/first-site">Что же выбрать?</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/login">Вход</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/register">Регистрация</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="content">
+    <h1>Матрица</h1>
+    <p>Главные факторы, на которые опираются люди при выборе монитора это диагональ и разрешение. Но хороший дисплей, это не только здоровье глаз и удовольствие от работы и времяпровождения в играх, но и матрица.
+    </p>
+      <p>  Что такое матрица? Простым языком, матрица — это непосредственно рабочая часть монитора, которая отвечает за передачу цветов на экране.
+      </p>
+    <p>На данный момент существует две самых основных технологии изготовления матриц – LCD и LED.
+    </p>
+        <p>LCD является аббревиатурой от словосочетания «Liquid Crystal Display», что в переводе на всем понятный русский язык означает жидкокристаллический дисплей, или ЖКИ.
+        </p>
+            <p>LED расшифровывается как «Light Emitting Diode», что на нашем языке читается как светоизлучающий диод, или просто — светодиод.
+            </p>
+    <p>Так как нам необходимо выбрать матрицу для монитора, предлагаю ознакомиться с их списком:
+    </p>
+    <ul>
+    <li>TN матрица.</li>
+        <li>TN+Film матрица</li>
+        <li>TFT матрица
+            <ul>
+                <li>SFT</li>
+            </ul>
+        </li>
+        <li>IPS
+            <ul>
+                <li>H-IPS</li>
+                <li>AS-IPS</li>
+                <li>PLS матрица</li>
+                <li>VA матрица</li>
+            </ul>
+        </li>
+        <li>PLS</li>
+        <li>VA
+            <ul>
+            <li>MVA</li>
+            <li>PVA</li>
+            </ul>
+        </li>
+        <li>OLED</li>
+    </ul>
+</div>
+</body>
 </html>
